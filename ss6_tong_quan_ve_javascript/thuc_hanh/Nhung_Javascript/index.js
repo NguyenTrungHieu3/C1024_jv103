@@ -1,0 +1,3 @@
+
+    alert('Xin Chào!');
+

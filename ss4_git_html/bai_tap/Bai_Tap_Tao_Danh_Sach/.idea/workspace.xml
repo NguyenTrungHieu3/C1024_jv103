@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73a8d78e-a845-46f5-893a-d98fa5a18285" name="Changes" comment="" />
+    <list default="true" id="73a8d78e-a845-46f5-893a-d98fa5a18285" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Bai_Hien_Thi_Dau_Ra.html.executor": "Run",
     "JavaScript Debug.Bai_Tap_CV.html.executor": "Run",
     "JavaScript Debug.Bai_Tap_Tao_Bang_Nang_Cao.html.executor": "Run",
     "JavaScript Debug.Bai_Tap_Tao_Bang_Nang_Cao_2.html.executor": "Run",
@@ -56,9 +59,10 @@
     "JavaScript Debug.test.html.executor": "Run",
     "JavaScript Debug.test2.html.executor": "Run",
     "JavaScript Debug.textarea.html.executor": "Run",
+    "JavaScript Debug.viDu.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Code_Gym_Workspace/Bai_Tap_Tao_Danh_Sach",
+    "last_opened_file_path": "D:/Code_Gym_Workspace/C1024_jv103",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,7 +96,7 @@
       <workItem from="1730985334562" duration="5431000" />
       <workItem from="1731036345085" duration="1954000" />
       <workItem from="1731072334148" duration="3582000" />
-      <workItem from="1731193924761" duration="20379000" />
+      <workItem from="1731193924761" duration="29062000" />
     </task>
     <servers />
   </component>
