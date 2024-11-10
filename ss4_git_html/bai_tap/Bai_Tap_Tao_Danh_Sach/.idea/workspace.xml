@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73a8d78e-a845-46f5-893a-d98fa5a18285" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2oVEMj1MEmCJf66xP5t8a8sZzdz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Bai_Tap_CV.html.executor": "Run",
+    "JavaScript Debug.Bai_Tap_Tao_Bang_Nang_Cao.html.executor": "Run",
+    "JavaScript Debug.Bai_Tap_Tao_Bang_Nang_Cao_2.html.executor": "Run",
+    "JavaScript Debug.Bai_Tap_Tao_Danh_Sach.html.executor": "Run",
+    "JavaScript Debug.Bai_Tap_Tao_Form_Don_Gian.html.executor": "Run",
+    "JavaScript Debug.Bai_Tap_Thoi_Khoa_Bieu.html.executor": "Run",
+    "JavaScript Debug.Dang_Ky.html.executor": "Run",
+    "JavaScript Debug.Form_Lay_Survey_Khach_Hang.html.executor": "Run",
+    "JavaScript Debug.Form_Tim_Kiem.html.executor": "Run",
+    "JavaScript Debug.Thoi_Khoa_Bieu.html.executor": "Run",
+    "JavaScript Debug.bang_trong_html.html.executor": "Run",
+    "JavaScript Debug.input_type_button.html.executor": "Run",
+    "JavaScript Debug.input_type_checkbox.html.executor": "Run",
+    "JavaScript Debug.input_type_password.html.executor": "Run",
+    "JavaScript Debug.input_type_radio.html.executor": "Run",
+    "JavaScript Debug.input_type_reset.html.executor": "Run",
+    "JavaScript Debug.input_type_submit.html.executor": "Run",
+    "JavaScript Debug.input_type_text.html.executor": "Run",
+    "JavaScript Debug.selection_and_option.html.executor": "Run",
+    "JavaScript Debug.simpleform.html.executor": "Run",
+    "JavaScript Debug.tablesimple.html.executor": "Run",
+    "JavaScript Debug.test.html.executor": "Run",
+    "JavaScript Debug.test2.html.executor": "Run",
+    "JavaScript Debug.textarea.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Code_Gym_Workspace/Bai_Tap_Tao_Danh_Sach",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code_Gym_Workspace\Bai_Tap_Tao_Danh_Sach" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73a8d78e-a845-46f5-893a-d98fa5a18285" name="Changes" comment="" />
+      <created>1730946297114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730946297114</updated>
+      <workItem from="1730946298191" duration="140000" />
+      <workItem from="1730946452207" duration="2104000" />
+      <workItem from="1730985334562" duration="5431000" />
+      <workItem from="1731036345085" duration="1954000" />
+      <workItem from="1731072334148" duration="3582000" />
+      <workItem from="1731193924761" duration="20379000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

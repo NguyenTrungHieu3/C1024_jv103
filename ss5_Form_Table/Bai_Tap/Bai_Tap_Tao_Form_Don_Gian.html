@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đơn giản</title>
+</head>
+<body>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #fieldset1{
+    background-color: #b2fcff;
+    width: 500px;
+    height: 288px;
+  }
+  #fieldset2{
+    background-color: white;
+    height: 267px;
+  }
+  h2{
+    text-align: center;
+    background-color: #ff6633;
+    color: white;
+    padding: 8px 8px;
+  }
+  #row3 td{
+    color: #ff6633;
+  }
+  #row4 td{
+    color: #ff6633;
+  }
+  #row4 td{
+    color: #ff6633;
+  }
+  #submit{
+    padding: 4px 4px;
+  }
+  #reset{
+    padding: 4px 4px;
+  }
+</style>
+<form>
+  <fieldset id="fieldset1">
+      <fieldset id="fieldset2">
+        <h2>SỞ THÍCH CỦA BẠN</h2>
+        <table>
+          <tr>
+            <td><label for="name" style="color: blue">Họ và tên</label></td>
+            <td colspan="3"><input type="text" name="name" id="name" size="35"></td>
+          </tr>
+          <tr>
+            <td><label for="email" style="color: blue">Email</label></td>
+            <td colspan="3"><input type="email" name="email" id="email" ></td>
+          </tr>
+          <tr id="row3">
+            <td><label for="checkbox" style="color: blue">Sở thích</label></td>
+            <td><input type="checkbox" name="check" id="checkbox">Thể thao</td>
+            <td><input type="checkbox" name="check">Âm nhạc</td>
+            <td><input type="checkbox" name="check">Đọc sách <br></td>
+          </tr>
+          <tr id="row4">
+            <td></td>
+            <td><input type="checkbox" name="check">Lướt web</td>
+            <td><input type="checkbox" name="check">Chơi game</td>
+            <td><input type="checkbox" name="check">Điện ảnh <br></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="color: #ff6633"><input type="checkbox" name="check">Du lịch</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Gửi thông tin" id="submit"></td>
+            <td><input type=reset value="Nhập lại" id="reset"></td>
+          </tr>
+        </table>
+
+      </fieldset>
+  </fieldset>
+</form>
+
+</body>
+</html>

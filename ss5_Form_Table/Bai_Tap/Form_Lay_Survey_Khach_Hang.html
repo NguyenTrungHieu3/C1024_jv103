@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form lấy survey khách hàng</title>
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fa;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #4a90e2;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    select, input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    input[type="radio"] + label, input[type="checkbox"] + label {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input[type="text"] {
+        display: inline-block;
+        width: calc(48% - 10px);
+        margin-right: 2%;
+    }
+
+    input[type="text"]:last-child {
+        margin-right: 0;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    #ageRange, #incomeRange {
+        max-width: 400px;
+    }
+
+    div.ageRange, div.incomeRange, div.gender, div.product, div.frequently-asked, div.money, div.question {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    div input[type="text"] {
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+        transform: scale(1.2);
+        margin-bottom: 8px;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.2);
+        margin-bottom: 8px;
+    }
+    .submit-container {
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    #submit {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4a90e2;
+        color: white;
+        cursor: pointer;
+    }
+
+    #submit:hover {
+        background-color: #357ab8;
+    }
+
+</style>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <div class="ageRange">
+        <div>
+            <label for="ageRange">What is your age range?</label>
+        </div>
+        <select id="ageRange">
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-50">35-50</option>
+            <option value="50+">50+</option>
+        </select>
+    </div>
+    <div class="incomeRange">
+        <div>
+            <label for="incomeRange">What is your yearly income range?</label>
+        </div>
+        <select id="incomeRange">
+            <option value="$0 - $25,000">$0 - $25,000</option>
+            <option value="$25,001 - $50,000">$$25,001 - $50,000</option>
+            <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+            <option value="$100,000+">$100,000+</option>
+        </select>
+    </div>
+    <div class="gender">
+        <div>
+            <label for="gender">Gender Identity</label>
+        </div>
+        <input id="gender" name="gender" type="radio" value="Male">Male <br>
+        <input name="gender" type="radio" value="Female">Female<br>
+        <input name="gender" type="radio" value="Nonbinary">Nonbinary<br>
+        <input name="gender" type="radio" value="Other">Other<br>
+        <input type="text" name="gender">
+        <p>Maximum of 250 characters.    Currently Used: 0 characters.</p>
+    </div>
+    <div class="product">
+        <div>
+            <label for="product">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label>
+        </div>
+        <input type="checkbox" name="product" value="Product 1" id="product">Product 1 <br>
+        <input type="checkbox" name="product" value="Product 2">Product 2 <br>
+        <input type="checkbox" name="product" value="Product 3">Product 3 <br>
+    </div>
+    <div class="frequently-asked">
+        <div>
+            <label for="frequent">How often would you use our new product?</label>
+        </div>
+        <input name="daily" type="radio" value="daily" id="frequent">Daily<br>
+        <input name="weekly" type="radio" value="weekly">Weekly<br>
+        <input name="monthly" type="radio" value="monthly">Monthly<br>
+    </div>
+    <div class="money">
+        <div>
+            <label for="dollars">What would you pay for the new product?</label>
+        </div>
+        $
+        <input type="text" name="dollars" id="dollars" value="$0.00">
+        .
+        <input type="text" name="cents" value="$0"><br>
+    </div>
+    <div class="question">
+        <div>
+            <label for="frequent">What features would you like to see in the new product.</label>
+        </div>
+        <textarea name="question" id="question" cols="100" rows="10"></textarea>
+    </div>
+    <div class="submit-container">
+        <input type="submit" id="submit" value="Submit" name="submit">
+    </div>
+</body>
+</html>
