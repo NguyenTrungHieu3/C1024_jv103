@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai_1</title>
+</head>
+<body>
+    <script>
+        var nhapDiemHoa;
+        var nhapDiemLy;
+        var nhapDiemSinh;
+        nhapDiemLy = prompt("Nhập điểm Lý: ");
+        nhapDiemHoa = prompt("Nhập điểm Hóa: ");
+        nhapDiemSinh = prompt("Nhập điểm Sinh: ");
+        var diemLy = parseFloat(nhapDiemLy);
+        var diemHoa = parseFloat(nhapDiemHoa);
+        var diemSinh = parseFloat(nhapDiemSinh);
+        var diemTrungBinh = (diemLy + diemHoa + diemSinh)/3;
+        document.write("Điểm trung bình: "+diemTrungBinh);
+    </script>
+</body>
+</html>
