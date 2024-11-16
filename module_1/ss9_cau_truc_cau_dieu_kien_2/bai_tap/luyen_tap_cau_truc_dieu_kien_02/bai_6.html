@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+    <h2>Giải phương trình bậc nhất ax+b=0</h2>
+    <p>
+        <label for="numberA">Nhập a:</label> <br>
+        <input type="text" id="numberA"> <br>
+        <label for="numberB">Nhập  b:</label> <br>
+        <input type="text" id="numberB"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let a = parseFloat(document.getElementById("numberA").value);
+        let b = parseFloat(document.getElementById("numberB").value);
+        if(isNaN(a) || isNaN(b)){
+            alert("Vui lòng nhập lại");
+        }
+        else if(a===0){
+            if(b===0){
+                alert("Phương trình có vô số nghiệm");
+            }
+            else{
+                alert("Phương trình vô nghiệm");
+            }
+        }
+        else{
+            alert("Phương trình có nghiệm x="+(-b/a));
+        }
+    }
+</script>

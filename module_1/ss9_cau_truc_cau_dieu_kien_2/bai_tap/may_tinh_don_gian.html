@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    button{
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<form>
+    <fieldset>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result" name="result">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" name="btn1" id="btn1" value="1" onclick="inputValue(this.value)">1</button>
+                </td>
+                <td>
+                    <button type="button" name="btn1" id="btn2" value="2" onclick="inputValue(this.value)">2</button>
+                </td>
+                <td>
+                    <button type="button" name="btn1" id="btn3" value="3" onclick="inputValue(this.value)">3</button>
+                </td>
+                <td>
+                    <button type="button" name="btnSum" id="btnSum" value="+" onclick="inputValue(this.value)">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" name="btn4" id="btn4" value="4" onclick="inputValue(this.value)">4</button>
+                </td>
+                <td>
+                    <button type="button" name="btn5" id="btn5" value="5" onclick="inputValue(this.value)">5</button>
+                </td>
+                <td>
+                    <button type="button" name="btn6" id="btn6" value="6" onclick="inputValue(this.value)">6</button>
+                </td>
+                <td>
+                    <button type="button" name="btnSub" id="btnSub" value="-" onclick="inputValue(this.value)">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" name="btn7" id="btn7" value="7" onclick="inputValue(this.value)">7</button>
+                </td>
+                <td>
+                    <button type="button" name="btn8" id="btn8" value="8" onclick="inputValue(this.value)">8</button>
+                </td>
+                <td>
+                    <button type="button" name="btn9" id="btn9" value="9" onclick="inputValue(this.value)">9</button>
+                </td>
+                <td>
+                    <button type="button" name="btnMul" id="btnMul" value="*" onclick="inputValue(this.value)">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset" name="btnAC" id="btnAC" value="AC">AC</button>
+                </td>
+                <td>
+                    <button type="button" name="btn0" id="btn0" value="0" onclick="inputValue(this.value)">0</button>
+                </td>
+                <td>
+                    <button type="button" name="btnEqual" id="btnEqual" value="=">=</button>
+                </td>
+                <td>
+                    <button type="button" name="btnDiv" id="btnDiv" value="/" onclick="inputValue(this.value)">/</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
+<script>
+    let result = document.getElementById("result");
+    function inputValue(value){
+        result.value += value;
+    }
+    let select = document.getElementById("btnEqual");
+    select.addEventListener("click",calculate);
+    function calculate(){
+        result.value = eval(result.value);
+    }
+</script>

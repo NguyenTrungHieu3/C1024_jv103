@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+    <h2>Kiểm tra xem một số nhập vào có phải là tuổi của một người không.</h2>
+    <p>
+        <label for="age">Nhập tuổi:</label> <br>
+        <input type="text" id="age"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let age = parseInt(document.getElementById("age").value);
+        if (isNaN(age) || age <= 0 || age > 120) {
+            alert("Đây không phải tuổi người hợp lệ");
+        } else{
+            alert("Đây là tuổi người hợp lệ");
+        }
+    }
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+    <h2>Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.</h2>
+    <p>
+        <label for="canhA">Nhập cạnh a:</label> <br>
+        <input type="text" id="canhA"> <br>
+        <label for="canhB">Nhập cạnh b:</label> <br>
+        <input type="text" id="canhB"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let canhA = parseFloat(document.getElementById("canhA").value);
+        let canhB = parseFloat(document.getElementById("canhB").value);
+        let area;
+        if(isNaN(canhA) || isNaN(canhB)){
+            alert("Vui lòng nhập lại");
+        }
+        else{
+            area = canhA*canhB;
+        }
+        alert("Area: "+area);
+    }
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+    <h2>Tính cước điện thoại cho một hộ gia đình</h2>
+    <p>
+        <label for="soPhut">Nhập số cước điện thoại:</label> <br>
+        <input type="text" id="soPhut"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let soPhut = parseFloat(document.getElementById("soPhut").value);
+        let giaCuoc = 0;
+        if(soPhut<0){
+            alert("Số phút nhập vào sai")
+        } else if (soPhut <= 100){
+            giaCuoc = soPhut*10000;
+        } else if(soPhut <=200){
+            giaCuoc = soPhut*5000;
+        } else{
+            giaCuoc = soPhut*3000;
+        }
+        alert("Giá cước của hộ gia đình trên là: "+ giaCuoc);
+    }
+</script>

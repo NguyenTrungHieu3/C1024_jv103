@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+</head>
+<body>
+  <h2>Chương trình tính giá điện.</h2>
+  <p>
+    <label for="soDien">Nhập số điện:</label> <br>
+    <input type="text" id="soDien"> <br>
+  </p>
+  <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+  function check() {
+    let soDien = parseInt(document.getElementById("soDien").value);
+    let tongTien;
+    if (isNaN(soDien) || soDien <= 0) {
+      alert("Vui lòng nhập hợp lệ");
+      return;
+    } else {
+      if(soDien <= 10) {
+          tongTien = soDien*5000;
+      } else if(soDien <= 15) {
+          tongTien = 50000+(soDien-10)*4000;
+      } else if(soDien <= 20) {
+          tongTien = 70000+(soDien-15)*3000;
+      } else{
+          tongTien = 85000+(soDien-20)*1000;
+      }
+    }
+    alert("Tổng tiền điện là: "+tongTien);
+  }
+</script>

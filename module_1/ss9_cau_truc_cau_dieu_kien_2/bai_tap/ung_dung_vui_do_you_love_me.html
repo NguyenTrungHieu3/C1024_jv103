@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Do you love me?</h1>
+    <button type="button" value="YES" name="YES" onclick="alert('Yes I love you too <3')">YES</button>
+    <button type="button" value="NO" name="NO" id="btnNo" onmouseover="noHover()" style="position: absolute">NO</button>
+</body>
+</html>
+<script>
+    function noHover() {
+        var x = Math.round(Math.random() * window.innerWidth);
+        var y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("btnNo").style.left = x + "px";
+        document.getElementById("btnNo").style.top = y + "px";
+    }
+</script>

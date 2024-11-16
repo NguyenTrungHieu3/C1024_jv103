@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <h2>Kiểm tra số nhập vào có lớn hơn 0 hay không?</h2>
+    <p>
+        <label for="number">Nhập số:</label> <br>
+        <input type="text" id="number"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check(){
+        let age = parseInt(document.getElementById("number").value);
+        if(age <0){
+            alert("Số nhập vào < 0")
+        }
+        else{
+            alert("Số nhập vào >0");
+        }
+    }
+</script>

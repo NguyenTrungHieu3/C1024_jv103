@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <h2>Xếp hạng học lực của học sinh</h2>
+    <p>
+        <label for="diemBaiKiemTra">Nhập điểm bài kiểm tra:</label> <br>
+        <input type="text" id="diemBaiKiemTra"> <br>
+    </p>
+    <p>
+        <label for="diemThiGiuaKy">Nhập điểm thi giữa kỳ:</label> <br>
+        <input type="text" id="diemThiGiuaKy"> <br>
+    </p>
+    <p>
+        <label for="diemThiCuoiKy">Nhập điểm thi cuối kỳ:</label> <br>
+        <input type="text" id="diemThiCuoiKy"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let diemBaiKiemTra = parseFloat(document.getElementById("diemBaiKiemTra").value);
+        let diemThiGiuaKy = parseFloat(document.getElementById("diemBaiKiemTra").value);
+        let diemThiCuoiKy = parseFloat(document.getElementById("diemBaiKiemTra").value);
+        let diemTrungBinh = (diemBaiKiemTra+diemThiGiuaKy+diemThiCuoiKy)/3;
+        if (diemBaiKiemTra <0 || diemBaiKiemTra>10 || diemThiGiuaKy <0 || diemThiGiuaKy>10 || diemThiCuoiKy <0 || diemThiCuoiKy>10)
+        {
+            alert("Điểm nhập vào sai")
+        } else if(diemTrungBinh>=8.5){
+            alert("Học sinh giỏi");
+        } else if(diemTrungBinh>=7){
+            alert("Học sinh khá");
+        } else if(diemTrungBinh>=5){
+            alert("Học sinh trung bình");
+        } else if(diemTrungBinh>=3.5){
+            alert("Học sinh trung yếu");
+        } else{
+            alert("Học sinh kém");
+        }
+    }
+</script>

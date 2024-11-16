@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+</head>
+<body>
+    <h2>Tính lãi suất ngân hàng</h2>
+    <p>
+        <label for="soTien">Nhập số tiền muốn gửi tiết kiệm:</label> <br>
+        <input type="text" id="soTien"> <br>
+    </p>
+    <p>
+        <label for="soThang">Nhập số tháng :</label> <br>
+        <input type="text" id="soThang"> <br>
+    </p>
+    <p>
+        <label for="laiSuat">Nhập lãi suất :</label> <br>
+        <input type="text" id="laiSuat"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let tienGoc = parseFloat(document.getElementById("soTien").value);
+        let soThang = parseFloat(document.getElementById("soThang").value);
+        let laiSuat = parseFloat(document.getElementById("laiSuat").value);
+        let tienLai;
+        if (isNaN(tienGoc) || isNaN(soThang) || isNaN(laiSuat) || tienGoc<0 || laiSuat<0) {
+            alert("Vui lòng nhập hợp lệ");
+            return;
+        } else {
+            let tongTienSau = tienGoc*Math.pow((1+laiSuat/100),soThang);
+            tienLai = tongTienSau - tienGoc;
+        }
+        alert("Tổng tiền lãi là: "+tienLai.toFixed(0)+"VND");
+    }
+</script>

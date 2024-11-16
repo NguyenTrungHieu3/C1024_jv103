@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    td{
+        padding-bottom: 20px;
+    }
+</style>
+<form>
+    <table>
+        <tr>
+            <th colspan="2"><h1>Tính chỉ số cân nặng</h1></th>
+        </tr>
+        <tr>
+            <td>
+                <label for="weight">Nhập cân nặng: (kg)</label>
+            </td>
+            <td>
+                <input type="text" id="weight" name="weight">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="height">Nhập chiều cao: (m)</label>
+            </td>
+            <td>
+                <input type="text" id="height" name="height"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" name="check" id="check" value="Kiểm tra">Kiểm tra</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b><p id="result"></p></b>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+<script>
+    function check() {
+        var weight = parseFloat(document.getElementById("weight").value);
+        var height = parseFloat(document.getElementById("height").value);
+        var result = "";
+        if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+            result = "Vui lòng nhập giá trị hợp lệ cho cân nặng và chiều cao!";
+        } else{
+            var bmi = weight / ( height * height);
+            if (bmi < 18)
+                result = "Underweight";
+            else if (bmi < 25.0)
+                result = "Normal";
+            else if (bmi < 30.0)
+                result = "Overweight";
+            else
+                result = "Obese";
+        }
+        document.getElementById("result").textContent = result;
+    }
+    var selected = document.getElementById("check");
+    selected.addEventListener("click", check);
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <h2>Chuyển từ mét sang feet</h2>
+    <p>
+        <label for="met">Nhập mét:</label> <br>
+        <input type="text" id="met"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check(){
+        let m = parseFloat(document.getElementById("met").value);
+        let ft;
+        if(isNaN(m)){
+            alert("Nhập mét sai")
+        }
+        else{
+            ft = m*3.2808;
+        }
+        alert("Feet: "+ft);
+    }
+</script>

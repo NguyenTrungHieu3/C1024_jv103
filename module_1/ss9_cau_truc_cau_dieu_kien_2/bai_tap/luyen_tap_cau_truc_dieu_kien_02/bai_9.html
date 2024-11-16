@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+  <h2>Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.</h2>
+  <p>
+    <label for="numberA">Nhập a:</label> <br>
+    <input type="text" id="numberA"> <br>
+    <label for="numberB">Nhập  b:</label> <br>
+    <input type="text" id="numberB"> <br>
+    <label for="numberC">Nhập  c:</label> <br>
+    <input type="text" id="numberC"> <br>
+  </p>
+  <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+  function check() {
+    let a = parseFloat(document.getElementById("numberA").value);
+    let b = parseFloat(document.getElementById("numberB").value);
+    let c = parseFloat(document.getElementById("numberC").value);
+    if(isNaN(a) || isNaN(b) || isNaN(c)) {
+      alert("Vui lòng nhập lại");
+    } else if(a<0 || b<0 || c<0 || a+b<=c || a+c<=b || b+c<=a){
+      alert("Đây không phải là tam giác");
+    } else {
+      alert("Đây là tam giác");
+    }
+  }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+</head>
+<body>
+    <h2>Tính thuế thu nhập cá nhân</h2>
+    <p>
+        <label for="soTien">Nhập số tiền thu nhập:</label> <br>
+        <input type="text" id="soTien"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let soTienThuNhap = parseFloat(document.getElementById("soTien").value);
+        let thue;
+        if (isNaN(soTienThuNhap) || soTienThuNhap <= 0) {
+            alert("Vui lòng nhập hợp lệ");
+            return;
+        } else {
+            if(soTienThuNhap <= 5000000) {
+                thue = soTienThuNhap*0.05;
+            } else if(soTienThuNhap <= 10000000) {
+                thue = 250000+(soTienThuNhap-5000000)*0.1;
+            } else if(soTienThuNhap <= 18000000) {
+                thue = 250000+500000+(soTienThuNhap-10000000)*0.15;
+            } else{
+                thue = 250000+500000+1200000+(soTienThuNhap-18000000)*0.2;
+            }
+        }
+        alert("Tổng tiền thuế là: "+thue);
+    }
+</script>

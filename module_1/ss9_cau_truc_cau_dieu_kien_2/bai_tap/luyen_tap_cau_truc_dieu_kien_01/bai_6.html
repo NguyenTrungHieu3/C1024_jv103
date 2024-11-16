@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+    <h2>Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</h2>
+    <p>
+        <label for="doanhThuBanHang">Nhập doanh thu bán hàng:</label> <br>
+        <input type="text" id="doanhThuBanHang"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let doanhThuBanHang = parseFloat(document.getElementById("doanhThuBanHang").value);
+        let hoaHong = 0;
+        if(doanhThuBanHang < 0) {
+            alert("Doanh thu bán hàng không thể nhỏ hơn 0")
+        } else if(doanhThuBanHang <= 10000000){
+            hoaHong = doanhThuBanHang*0.05;
+        } else if(doanhThuBanHang <= 20000000){
+            hoaHong = doanhThuBanHang*0.1;
+        } else{
+            hoaHong = doanhThuBanHang*0.15;
+        }
+        alert("Hoa hồng nhận được là: "+hoaHong);
+    }
+</script>

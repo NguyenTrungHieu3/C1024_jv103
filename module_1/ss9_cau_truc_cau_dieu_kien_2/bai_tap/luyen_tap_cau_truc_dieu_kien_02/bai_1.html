@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <h2>Chuyển từ độ C sang độ F</h2>
+    <p>
+        <label for="doC">Nhập độ C:</label> <br>
+        <input type="text" id="doC"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check(){
+        let doC = parseFloat(document.getElementById("doC").value);
+        let doF;
+            if(isNaN(doC)){
+            alert("Nhập độ C sai")
+        }
+        else{
+            doF = doC*9/5 + 32;
+        }
+        alert("Độ F: "+doF);
+    }
+</script>

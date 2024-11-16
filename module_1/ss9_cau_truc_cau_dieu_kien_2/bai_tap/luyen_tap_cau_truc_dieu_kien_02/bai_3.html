@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <h2>Tính diện tích hình vuông khi biết cạnh a.</h2>
+    <p>
+        <label for="canhA">Nhập cạnh a:</label> <br>
+        <input type="text" id="canhA"> <br>
+    </p>
+    <button type="button" id="btnCheck" value="check" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check(){
+        let canhA = parseFloat(document.getElementById("canhA").value);
+        let area;
+        if(isNaN(canhA)){
+            alert("Vui lòng nhập lại");
+        }
+        else{
+            area = canhA*canhA;
+        }
+        alert("Area: "+area);
+    }
+</script>
