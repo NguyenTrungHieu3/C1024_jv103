@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 3</title>
+</head>
+<body>
+  <h2>Hiển thị ra 20 số trong dãy fibonacci đầu tiên</h2>
+  <script>
+    let num1 = 0;
+    let num2 = 1;
+    let fibo;
+    document.write(num1 + "<br>");
+    document.write(num2 + "<br>");
+    for(let i=2;i<20;i++){
+      fibo = num1 + num2;
+      num1 = num2;
+      num2 = fibo;
+      document.write(fibo + "<br>");
+    }
+  </script>
+</body>
+</html>
