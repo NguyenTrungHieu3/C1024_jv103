@@ -7,7 +7,39 @@
 <body>
 <h2>In hình trái tim</h2>
 <script>
+    // Vẽ phần trên của trái tim
+    for (let i = 1; i <= 3; i++) {
+        for (let j = 1; j <= 19; j++) {
+            if (i === 1) {
+                if (j <= 2 || (j >= 9 && j <= 11) || j >= 18) {
+                    document.write("&nbsp;&nbsp;");
+                } else {
+                    document.write("*");
+                }
+            } else if (i === 2) {
+                if (j === 1 || (j >= 9 && j <= 11) || j === 19) {
+                    document.write("&nbsp;&nbsp;");
+                } else {
+                    document.write("*");
+                }
+            } else {
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
 
+    // Vẽ phần dưới của trái tim
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 19; j++) {
+            if (j >= i && j <= 20 - i) {
+                document.write("*");
+            } else {
+                document.write("&nbsp;&nbsp;");
+            }
+        }
+        document.write("<br>");
+    }
 </script>
 </body>
 </html>

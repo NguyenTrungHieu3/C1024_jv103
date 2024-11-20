@@ -62,20 +62,21 @@
 </html>
 <script>
     function convert() {
-        var amount = document.getElementById("amount").value;
-        var selectedFromCurrencyValue = document.getElementById("fromCurrency").value;
-        var selectedToCurrencyValue = document.getElementById("toCurrency").value;
-        if(selectedFromCurrencyValue == "VietNam" &&    selectedToCurrencyValue == "USD") {
-            var result = amount * 23000;
+        let amount = document.getElementById("amount").value;
+        let selectedFromCurrencyValue = document.getElementById("fromCurrency").value;
+        let selectedToCurrencyValue = document.getElementById("toCurrency").value;
+        let result;
+        if(selectedFromCurrencyValue === "VietNam" &&    selectedToCurrencyValue === "USD") {
+            result = amount * 23000;
         }
-        else if(selectedFromCurrencyValue == "USD" && selectedToCurrencyValue == "VietNam"){
-            var result = amount/23000;
+        else if(selectedFromCurrencyValue === "USD" && selectedToCurrencyValue === "VietNam"){
+            result = amount/23000;
         }
         else{
-            var result = amount;
+            result = amount;
         }
         document.getElementById("result").textContent = result;
     }
-    var selected = document.getElementById("convert");
+    let selected = document.getElementById("convert");
     selected.addEventListener("click", convert);
 </script>
