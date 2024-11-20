@@ -6,10 +6,11 @@
 </head>
 <body>
 <style>
-    #number1{
+    #number1 {
         width: 173px;
     }
-    #number2{
+
+    #number2 {
         width: 181px;
     }
 </style>
@@ -52,25 +53,28 @@
     function addition() {
         var number1 = parseFloat(document.getElementById("number1").value);
         var number2 = parseFloat(document.getElementById("number2").value);
-        var result = number1+number2;
+        var result = number1 + number2;
         document.getElementById("result").textContent = result;
     }
+
     function subtraction() {
         var number1 = parseFloat(document.getElementById("number1").value);
         var number2 = parseFloat(document.getElementById("number2").value);
-        var result = number1-number2;
+        var result = number1 - number2;
         document.getElementById("result").textContent = result;
     }
+
     function multiplication() {
         var number1 = parseFloat(document.getElementById("number1").value);
         var number2 = parseFloat(document.getElementById("number2").value);
-        var result = number1*number2;
+        var result = number1 * number2;
         document.getElementById("result").textContent = result;
     }
+
     function division() {
         var number1 = parseFloat(document.getElementById("number1").value);
         var number2 = parseFloat(document.getElementById("number2").value);
-        var result = number1/number2;
+        var result = number1 / number2;
         document.getElementById("result").textContent = result;
     }
 </script>

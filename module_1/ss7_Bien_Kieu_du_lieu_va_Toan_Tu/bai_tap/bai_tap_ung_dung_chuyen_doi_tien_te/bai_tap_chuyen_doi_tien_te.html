@@ -6,20 +6,23 @@
 </head>
 <body>
 <style>
-    td{
+    td {
         padding: 10px 30px 10px 0;
     }
-    th{
+
+    th {
         text-align: left;
     }
-    button{
+
+    button {
         width: 100px;
         height: 26px;
         background-color: mediumpurple;
         color: white;
         border-color: #4663f3;
     }
-    #row3{
+
+    #row3 {
         color: #4663f3;
     }
 </style>
@@ -32,7 +35,8 @@
         </tr>
         <tr>
             <td>
-                <input style="width: 160px; height: 20px" type="number" name="amount" min="1" max="1000" value="1" id="amount">
+                <input style="width: 160px; height: 20px" type="number" name="amount" min="1" max="1000" value="1"
+                       id="amount">
             </td>
             <td>
                 <select style="width: 132px; height: 26px" id="fromCurrency">
@@ -66,17 +70,16 @@
         let selectedFromCurrencyValue = document.getElementById("fromCurrency").value;
         let selectedToCurrencyValue = document.getElementById("toCurrency").value;
         let result;
-        if(selectedFromCurrencyValue === "VietNam" &&    selectedToCurrencyValue === "USD") {
+        if (selectedFromCurrencyValue === "VietNam" && selectedToCurrencyValue === "USD") {
             result = amount * 23000;
-        }
-        else if(selectedFromCurrencyValue === "USD" && selectedToCurrencyValue === "VietNam"){
-            result = amount/23000;
-        }
-        else{
+        } else if (selectedFromCurrencyValue === "USD" && selectedToCurrencyValue === "VietNam") {
+            result = amount / 23000;
+        } else {
             result = amount;
         }
         document.getElementById("result").textContent = result;
     }
+
     let selected = document.getElementById("convert");
     selected.addEventListener("click", convert);
 </script>
