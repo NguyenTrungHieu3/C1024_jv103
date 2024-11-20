@@ -5,26 +5,26 @@
     <title>Bài 8</title>
 </head>
 <body>
-    <h2>Game đoán số</h2>
-    <button type="button" value="Bắt đầu" id="btnStart">Bắt đầu</button>
-    <script>
-        let start = document.getElementById("btnStart");
-        start.addEventListener("click", function () {
-            let min = parseInt(prompt("Nhập số min trong khoảng đoán: "));
-            let max = parseInt(prompt("Nhập số max trong khoảng đoán: "));
-            let key = Math.floor(Math.random() * max + min);
-            for (let i=0;i<3;i++){
-                let num = parseInt(prompt("Nhập số bạn đoán: "));
-                if(num < key){
-                    alert("Số bạn đoán nhỏ hơn");
-                } else if(num > key){
-                    alert("Số bạn đoán lớn hơn");
-                } else {
-                    alert("Bạn đoán đúng rồi xin chúc mừng!!");
-                }
+<h2>Game đoán số</h2>
+<button type="button" value="Bắt đầu" id="btnStart">Bắt đầu</button>
+<script>
+    let start = document.getElementById("btnStart");
+    start.addEventListener("click", function () {
+        let min = parseInt(prompt("Nhập số min trong khoảng đoán: "));
+        let max = parseInt(prompt("Nhập số max trong khoảng đoán: "));
+        let key = Math.floor(Math.random() * max + min);
+        for (let i = 0; i < 3; i++) {
+            let num = parseInt(prompt("Nhập số bạn đoán: "));
+            if (num < key) {
+                alert("Số bạn đoán nhỏ hơn");
+            } else if (num > key) {
+                alert("Số bạn đoán lớn hơn");
+            } else {
+                alert("Bạn đoán đúng rồi xin chúc mừng!!");
             }
-            alert("Bạn đã hết lượt đoán");
-        })
-    </script>
+        }
+        alert("Bạn đã hết lượt đoán");
+    })
+</script>
 </body>
 </html>

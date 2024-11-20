@@ -7,17 +7,17 @@
 <body>
 <h2>Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên</h2>
 <script>
-  let count = 0 ;
-  let num = 1;
-  let total = 0;
-  while(count !== 30){
-    if(num % 7 === 0){
-      count++;
-      total+=num;
+    let count = 0;
+    let num = 1;
+    let total = 0;
+    while (count !== 30) {
+        if (num % 7 === 0) {
+            count++;
+            total += num;
+        }
+        num++;
     }
-    num++;
-  }
-  alert("Tổng 30 số chia hết cho 7 đầu tiên là: "+total);
+    alert("Tổng 30 số chia hết cho 7 đầu tiên là: " + total);
 </script>
 </body>
 </html>
