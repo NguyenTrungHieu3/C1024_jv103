@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    // function in_kim_tu_thap() {
+    //     for (let i = 1; i <= 4; i++) {
+    //         for (let j = 1; j <= 7; j++) {
+    //             if(j<=4-i || j>=4+i){
+    //                 document.write("&nbsp;&nbsp;")
+    //             } else{
+    //                 document.write("*");
+    //             }
+    //         }
+    //         document.write("<br>")
+    //     }
+    // }
+    //
+    // in_kim_tu_thap();
+    function in_trai_tim() {
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 19; j++) {
+                if (j <= 5 - i || (j >= 5 + i && j <= 19 - 5 - i + 1) || j >= 19 - 5 + i + 1) {
+                    document.write("&nbsp;&nbsp;")
+                } else {
+                    document.write("*");
+                }
+            }
+            document.write("<br>")
+        }
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 19; j++) {
+                if (j < i || j>19-i+1){
+                    document.write("&nbsp;&nbsp;");
+                } else{
+                    document.write("*");
+                }
+            }
+            document.write("<br>")
+        }
+    }
+
+    in_trai_tim();
+</script>

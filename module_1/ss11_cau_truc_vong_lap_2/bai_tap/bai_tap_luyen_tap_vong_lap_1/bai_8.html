@@ -12,18 +12,31 @@
     start.addEventListener("click", function () {
         let min = parseInt(prompt("Nhập số min trong khoảng đoán: "));
         let max = parseInt(prompt("Nhập số max trong khoảng đoán: "));
-        let key = Math.floor(Math.random() * max + min);
-        for (let i = 0; i < 3; i++) {
-            let num = parseInt(prompt("Nhập số bạn đoán: "));
-            if (num < key) {
-                alert("Số bạn đoán nhỏ hơn");
-            } else if (num > key) {
-                alert("Số bạn đoán lớn hơn");
+        if (isNaN(min) || isNaN(max) || min >= max) {
+            alert("Vui lòng nhập khoảng min và max hợp lệ!");
+            return;
+        }
+        let key = Math.floor(Math.random() * (max-min+1) + min);
+        for (let i = 0; i <= 3; i++) {
+            if (i === 3) {
+                alert("Bạn đã hết lượt đoán");
             } else {
-                alert("Bạn đoán đúng rồi xin chúc mừng!!");
+                let num = parseInt(prompt("Nhập số bạn đoán: "));
+                if (isNaN(num)) {
+                    alert("Vui lòng nhập số hợp lệ");
+                    i--;
+                    continue;
+                }
+                if (num < key) {
+                    alert("Số bạn đoán nhỏ hơn");
+                } else if (num > key) {
+                    alert("Số bạn đoán lớn hơn");
+                } else if (num === key) {
+                    alert("Bạn đoán đúng rồi xin chúc mừng!!");
+                    break;
+                }
             }
         }
-        alert("Bạn đã hết lượt đoán");
     })
 </script>
 </body>
