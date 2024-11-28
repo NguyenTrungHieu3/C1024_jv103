@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 12</title>
+</head>
+<body>
+<script>
+    // var let const
+    // var: 2015
+    // let, const: ES6 ra mat 2015
+    // Cach 1: Su dung [] - array literal
+    const cars = ['BMW', 'Volvo', 'Ford', 'Mazda'];
+    // console.log("Do dai: "+cars.length);
+    // console.log(cars[0]); // chi so 0 //phan tu dau tien
+    // console.log(cars[cars.length - 1]); // last phan tu cuoi cung
+    // console.log("Kieu du lieu: "+typeof cars);
+    // for (let i = 0;i<cars.length;i++) {
+    //     console.log(cars[i]);
+    // }
+
+    cars.push('maybach');
+    cars[cars.length] = 'Vios';
+    console.log(cars.join("-->"));
+    cars.reverse();
+    // Duyet tu dau den cuoi
+    for (let index in cars) {
+        console.log(cars[index]);
+    }
+
+    //
+    // for (let car of cars) {
+    //     console.log(car);
+    // }
+
+    // cars.forEach(car => {
+    //     console.log(car);
+    // }
+    // Cach 2: Su dung toan tu new
+    // const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+    // console.log("Do dai mang fruits: "+fruits.length);
+    // console.log(fruits[0]); // chi so 0 //phan tu dau tien
+    // console.log(fruits[cars.length - 1]); // last phan tu cuoi cung
+    // console.log("Kieu du lieu: "+typeof fruits);
+    //
+    // const student = [];
+    // student[0] = 'A';
+    // console.log(student);
+
+</script>
+</body>
+</html>

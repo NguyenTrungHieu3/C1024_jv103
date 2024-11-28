@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const arr = [];
+    let numberOfElement = parseFloat(prompt("Nhập số lượng phần tử của mảng: "));
+    let max = -Infinity;
+    let average = 0;
+    for (let i = 0; i < numberOfElement; i++) {
+        arr[i] = parseFloat(prompt("Nhập số phần tử thứ " + (i + 1)));
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        average += arr[i];
+    }
+
+    alert("Số lớn nhất trong mảng là: " + max);
+    alert("Giá trị trung bình của mảng là: " + (average / numberOfElement));
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const arr = [1, 12, 3, 14, 5, 16, 7, 18, 9, 10];
+    let max = arr[0];
+    let index_max = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= max) {
+            max = arr[i];
+            index_max = i;
+        }
+    }
+    alert("Số lớn nhất trong mảng là: " + max );
+    alert("Vị trí: " + index_max );
+</script>

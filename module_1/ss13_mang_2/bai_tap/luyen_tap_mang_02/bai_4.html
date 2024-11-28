@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str = prompt("Nhập vào chuỗi: ");
+    count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
+            count++;
+        }
+    }
+    document.write("Số từ trong chuỗi trên là: " + count);
+</script>

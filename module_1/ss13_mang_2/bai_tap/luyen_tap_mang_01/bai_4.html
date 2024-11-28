@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    const arr = [];
+    let n = parseFloat(prompt("Nhập số lượng phần tử của mảng: "));
+
+    if (isNaN(n) || n <= 0) {
+        alert("Số lượng phần tử không hợp lệ!");
+    } else {
+        for (let i = 0; i < n; i++) {
+            let value = parseFloat(prompt("Nhập số phần tử thứ " + (i + 1) + ": "));
+
+            while (isNaN(value)) {
+                value = parseFloat(prompt("Giá trị không hợp lệ. Nhập lại số phần tử thứ " + (i + 1) + ": "));
+            }
+            arr.push(value);
+        }
+
+        const reverseArr = [];
+        for (let i = arr.length; i >= 0; i--) {
+            reverseArr.push(arr[i]);
+        }
+
+        let result = "Mảng sau khi đảo ngược: " + reverseArr.join(", ");
+        document.getElementById("result").innerText = result;
+    }
+</script>

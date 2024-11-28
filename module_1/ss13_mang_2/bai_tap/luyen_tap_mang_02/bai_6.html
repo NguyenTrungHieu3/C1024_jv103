@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let input = prompt("Nhập vào một mảng ký tự : ");
+    let charArray = input.split('');
+
+    for (let i = 0; i < charArray.length; i++) {
+        if (charArray[i] === '-') {
+            charArray[i] = '_';
+        }
+    }
+
+    let result = charArray.join('');
+    document.write("Chuỗi sau khi sửa là: " + result);
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    const arr = [];
+    let found = false;
+    let pos;
+    for (let i = 0; i < 10; i++) {
+        let value = parseFloat(prompt("Nhập số phần tử thứ " + (i + 1) + ": "));
+
+        while (isNaN(value)) {
+            value = parseFloat(prompt("Giá trị không hợp lệ. Nhập lại số phần tử thứ " + (i + 1) + ": "));
+        }
+        arr.push(value);
+    }
+
+    let V = parseFloat(prompt("Nhập phần tử muốn kiểm tra trong mảng: "));
+    for (let i = 0; i < 10; i++) {
+        if (V === arr[i]) {
+            found = true;
+            pos = i;
+            break;
+        }
+    }
+    if (found) {
+        for (let i = pos; i < arr.length - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr[arr.length - 1] = 0;
+        let result = "Mảng sau khi xóa là: " + arr.join(", ");
+        document.getElementById("result").innerText = result;
+    } else {
+        alert(V + " is not in the array");
+    }
+
+</script>

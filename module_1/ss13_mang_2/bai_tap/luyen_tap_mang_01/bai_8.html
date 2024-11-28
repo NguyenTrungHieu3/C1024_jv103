@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    const arr = [];
+    for (let i = 0; i < 10; i++) {
+        let value = parseFloat(prompt("Nhập số phần tử thứ " + (i + 1) + ": "));
+
+        while (isNaN(value)) {
+            value = parseFloat(prompt("Giá trị không hợp lệ. Nhập lại số phần tử thứ " + (i + 1) + ": "));
+        }
+        arr.push(value);
+    }
+
+    arr.sort(function (a, b) {
+        return b - a;
+    });
+
+    let result = "Mảng sau khi sắp xếp là: " + arr.join(", ");
+    document.getElementById("result").innerText = result;
+
+</script>

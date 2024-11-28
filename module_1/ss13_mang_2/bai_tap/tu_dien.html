@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<label for="word">Nhập từ</label>
+<input type="text" id="word">
+<button type="button" id="translate">Dịch</button>
+<br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    const engLishWords = ['banana', 'apple', 'orange', 'mango', 'grape', 'watermelon', "pen", "pencil", "book"];
+    const vietNamWords = ['Chuối', 'Táo', 'Cam', 'Xoài', 'Nho', 'Dưa hấu', "bút", "bút chì", "sách"];
+    let selected = document.getElementById("translate");
+    selected.addEventListener("click", translate);
+
+    function translate() {
+        let word = document.getElementById("word").value.trim();
+        console.log(word);
+        let found = false;
+        for (let i = 0; i < engLishWords.length; i++) {
+            if (engLishWords[i].toLowerCase() === word.toLowerCase()) {
+                document.getElementById("result").innerHTML = vietNamWords[i];
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            document.getElementById("result").innerHTML = "Không có từ này trong từ điển";
+        }
+    }
+</script>
