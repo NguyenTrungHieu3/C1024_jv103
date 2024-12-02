@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<h2>Tìm tên chòm sao tương ứng</h2>
+<form>
+    <label for="starName">Nhập tên chòm sao (Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus): </label>
+    <br>
+    <input type="text" id="starName">
+    <br>
+    <button type="button" value="Tìm kiếm" id="check">Tìm kiếm</button>
+</form>
+<p id="result">Result: </p>
+</body>
+</html>
+<script>
+    const starName = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    const constellationName = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function getconstellationName(str) {
+        for (let i = 0; i < starName.length; i++) {
+            if (str.toLowerCase() === starName[i].toLowerCase()) {
+                return constellationName[i];
+            }
+        }
+        return "Không tìm thấy tên ngôi sao";
+    }
+
+    function check() {
+        let inputStarName = document.getElementById("starName").value.trim();
+        let result = getconstellationName(inputStarName);
+        document.getElementById("result").innerHTML = `Result: ${result}`;
+    }
+
+    let selected = document.getElementById("check");
+    selected.addEventListener("click", check);
+</script>

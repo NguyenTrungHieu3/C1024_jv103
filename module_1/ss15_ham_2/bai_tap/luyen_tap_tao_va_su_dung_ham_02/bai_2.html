@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<h2>Tính diện tích, chu vi hình tròn</h2>
+<form>
+    <label for="banKinh">Nhập bán kính: </label> <br>
+    <input type="text" name="banKinh" id="banKinh" oninput="calculate()" onchange="calculate()">
+</form>
+<p id="chuVi">Chu vi: </p>
+<p id="dienTich">Diện tích: </p>
+</body>
+</html>
+<script>
+    function tinhChuVi(banKinh) {
+        return 2 * Math.PI * banKinh;
+    }
+
+    function tinhDienTich(banKinh) {
+        return Math.PI * banKinh * banKinh;
+    }
+
+    function calculate() {
+        let banKinh = parseFloat(document.getElementById("banKinh").value);
+        let chuVi = tinhChuVi(banKinh);
+        let dienTich = tinhDienTich(banKinh);
+        document.getElementById("chuVi").innerHTML = `Chu vi: ${chuVi}`;
+        document.getElementById("dienTich").innerHTML = `Diện tích: ${dienTich}`;
+    }
+</script>

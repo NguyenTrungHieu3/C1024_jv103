@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<h2>Kiểm tra số</h2>
+<form>
+    <label for="num">Nhập vào số nguyên: </label> <br>
+    <input type="text" name="num" id="num" oninput="calculate()" onchange="calculate()">
+</form>
+<p id="result">Result: </p>
+</body>
+</html>
+<script>
+    function kiemTra(num) {
+        if (num > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function calculate() {
+        let number = parseFloat(document.getElementById("num").value);
+        let result = kiemTra(number);
+        if (result) {
+            document.getElementById("result").innerHTML = "Số bạn nhập vào là số nguyên dương";
+        } else {
+            document.getElementById("result").innerHTML = "Số bạn nhập vào là số nguyên âm";
+        }
+    }
+</script>

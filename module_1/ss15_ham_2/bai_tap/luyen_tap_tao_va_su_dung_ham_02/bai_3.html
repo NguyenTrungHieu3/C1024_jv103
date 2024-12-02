@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<h2>Tính giai thừa</h2>
+<form>
+    <label for="num">Nhập số: </label> <br>
+    <input type="text" name="num" id="num" oninput="calculate()" onchange="calculate()">
+</form>
+<p id="result">Result: </p>
+</body>
+</html>
+<script>
+    function tinhGiaiThua(num) {
+        let result = 1;
+        for (let i = 1; i <= num; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    function calculate() {
+        let number = parseFloat(document.getElementById("num").value);
+        let result = tinhGiaiThua(number);
+        document.getElementById("result").innerHTML = `Result: ${result}`;
+    }
+</script>

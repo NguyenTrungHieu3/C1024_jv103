@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<h2>Kiểm tra số</h2>
+<form>
+    <label for="text">Nhập kí tự: </label> <br>
+    <input type="text" name="text" id="text" oninput="calculate()" onchange="calculate()">
+</form>
+<p id="result">Result: </p>
+</body>
+</html>
+<script>
+    const number = '1234567890';
+
+    function kiemTra(str) {
+        if (!isNaN(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function calculate() {
+        let text = parseFloat(document.getElementById("text").value);
+        let result = kiemTra(text);
+        if (result) {
+            document.getElementById("result").innerHTML = "Kí tự bạn nhập vào là số";
+        } else {
+            document.getElementById("result").innerHTML = "Kí tự bạn nhập vào không phải là số";
+        }
+    }
+</script>

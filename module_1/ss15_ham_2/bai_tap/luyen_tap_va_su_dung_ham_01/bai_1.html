@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<form>
+    <label for="hello">Nhập tên</label>
+    <input type="text" name="hello" id="hello">
+    <button type="button" value="Click" onclick="alertMessage()">Click</button>
+</form>
+</body>
+</html>
+<script>
+    function alertMessage() {
+        alert("Xin chào " + document.getElementById("hello").value);
+    }
+</script>

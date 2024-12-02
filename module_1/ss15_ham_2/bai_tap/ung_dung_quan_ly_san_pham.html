@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+<h2>Quản lý sản phẩm</h2>
+<form>
+    <fieldset>
+        <label for="addNewProduct"><b>Add New Product</b></label> <br>
+        <input type="text" name="addNewProduct" id="addNewProduct" placeholder="New Product" required>
+        <button type="submit" onclick="addProduct()">Add</button>
+    </fieldset>
+</form>
+
+<form>
+    <label><b>Display All Products</b></label> <br>
+    <table>
+        <thead>
+        <tr>
+            <th>Product Name</th>
+            <th><span id="numberOfProduct"></span></th>
+        </tr>
+        </thead>
+        <tbody id="productTable">
+
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
+<script>
+    const listProducts = [
+        "Sony Xperia",
+        "Samsung Galaxy",
+        "Nokia 6",
+        "Xiaomi Redmi Note 4",
+        "Apple Iphone 6S",
+        "Xiaomi Mi 5s Plus",
+        "Apple Iphone 8 Plus",
+        "Fujitsu F-04E",
+        "Oppo A71"
+    ];
+
+    function displayAllProducts() {
+        let table = document.getElementById("productTable");
+        let rows = "";
+        table.innerHTML = "";
+        for (let i = 0; i < listProducts.length; i++) {
+            rows += `<tr>
+                        <td>${listProducts[i]}</td>
+                        <td><button type='button' onclick='editProduct(${i})'>Edit</button></td>
+                        <td><button type='button' onclick='deleteProduct(${i})'>Delete</button></td>
+                    </tr>`;
+        }
+        table.innerHTML = rows;
+        let numberOfProduct = document.getElementById("numberOfProduct");
+        numberOfProduct.innerHTML = `${listProducts.length} products`;
+        numberOfProduct.style.color = 'red';
+    }
+
+    function addProduct() {
+        let newProductName = document.getElementById("addNewProduct").value.trim();
+        if (newProductName) {
+            listProducts.unshift(newProductName);
+            displayAllProducts();
+        } else {
+            alert("Tên sản phẩm trống");
+        }
+    }
+
+    function editProduct(index) {
+        let editProductName = prompt("Nhập tên sản phầm muốn đổi", listProducts[index]);
+        if (editProductName) {
+            listProducts[index] = editProductName;
+            displayAllProducts();
+        }
+    }
+
+    function deleteProduct(index) {
+        let selected = confirm("Bạn có muốn xóa không");
+        if (selected) {
+            listProducts.splice(index, 1);
+            displayAllProducts();
+        }
+    }
+
+    displayAllProducts();
+</script>
