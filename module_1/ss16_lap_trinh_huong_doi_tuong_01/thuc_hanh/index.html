@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;" ></canvas>-->
+<canvas id="myCanvas"></canvas>
+</body>
+</html>
+<script>
+    // function Student(id, name, address) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.address = address;
+    //     this.getInfor = function () {
+    //         return "Id=" + this.id + " Name=" + this.name + " Address=" + this.address;
+    //     }
+    // }
+    // var  student = new Student(1, "Nguyen Van A", "Da Nang");
+    // console.log(student.getInfor());
+
+    // Object literal
+    // var student = {
+    //     id : 1,
+    //     name : "Nguyen Van A",
+    //     address : "Ho Chi Minh",
+    //     getInfor : function(){
+    //         return "Id="+this.id + " Name="+this.name + " Address="+this.address;
+    //     }
+    // }
+    // console.log(student.name);
+    // console.log(student.getInfor());
+
+    // Tao doi tuong rong
+    // let person = {}
+    let person = {
+        name: ['Bob', 'Smith'],
+        age: 32,
+        gender: 'Male',
+        interests: ['Music', 'Football'],
+        bio: function () {
+            alert(this.name[0] + ' ' + this.name[1] + ' ' + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.')
+        },
+        greeting: function () {
+            alert('Hi! I\'m ' + this.name[0] + '.');
+        }
+    };
+    // person.bio();
+    // person.age = 55;
+    // person['gender'] = 'Male';
+    // console.log(person.age);
+    // console.log(person['gender']);
+    // console.log(person['name']['0']);
+    // person['eye'] = 'hazel';
+    // person.farewell = function () {
+    //     alert("Bye everybody!");
+    // }
+    // console.log(person.eye);
+    // person.farewell();
+    let myDataName = 'height';
+    let myDataValue = '1.75m';
+    // Khong dung dau cham duoc
+    // person.myDataName = myDataValue;
+    person[myDataName] = myDataValue;
+    console.log(person.height);
+
+    // function arc() {
+    //     var c = document.getElementById("myCanvas");
+    //     var ctx = c.getContext("2d");
+    //     ctx.beginPath();
+    //     ctx.arc(95,50,40,0,2*Math.PI);
+    //     ctx.stroke();
+    // }
+    // arc();
+
+    // function retangle() {
+    //     var canvas = document.getElementById("myCanvas");
+    //     var ctx = canvas.getContext("2d");
+    //     ctx.fillStyle = "#FF0000";
+    //     ctx.fillRect(0,0,150,75);
+    // }
+    //
+    // retangle();
+
+    // function text() {
+    //     var canvas = document.getElementById("myCanvas");
+    //     var ctx = canvas.getContext("2d");
+    //     ctx.font = "30px Arial";
+    //     ctx.fillText("Hello World", 50, 50);
+    // }
+    //
+    // text();
+</script>

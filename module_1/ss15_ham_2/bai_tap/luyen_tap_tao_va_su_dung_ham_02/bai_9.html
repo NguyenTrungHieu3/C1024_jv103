@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const arr = [];
+    let n = prompt("Nhập vào độ dài của mảng: ");
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập phần tử thứ " + i);
+    }
+
+    function search(x) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === x) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return -1;
+        } else {
+            return count;
+        }
+    }
+
+    let x = prompt("Nhập vào ký tự bất kỳ ");
+    alert(search(x));
+</script>

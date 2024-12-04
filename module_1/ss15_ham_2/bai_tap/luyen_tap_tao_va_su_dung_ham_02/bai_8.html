@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function reserve(arr) {
+        let first = 0;
+        let last = arr.length - 1;
+        while (first < last) {
+            let temp = arr[first];
+            arr[first] = arr[last];
+            arr[last] = temp;
+            first++;
+            last--;
+        }
+    }
+
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    console.log("Mảng trước khi đảo: " + arr.join(''));
+    reserve(arr);
+    console.log("Mảng sau khi đảo: " + arr.join(''));
+</script>

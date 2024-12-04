@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đối xứng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function isPalindrome(str) {
+        str = str.toLowerCase().trim();
+        if (str.length <= 1) {
+            return true;
+        }
+
+        if (str[0] !== str[str.length - 1]) {
+            return false;
+        }
+
+        return isPalindrome(str.substring(1, str.length - 1));
+    }
+
+    const str = "rotor";
+    console.log(isPalindrome(str));
+</script>
