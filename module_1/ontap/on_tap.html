@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>On tap</title>
+</head>
+<body>
+<div id="result"></div>
+<style>
+    /* tag selector */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #999;
+        padding: 4px;
+    }
+</style>
+</body>
+<script>
+    Products = [];
+
+    class Product {
+        constructor(code, name, price, quantity) {
+            this.code = code;
+            this.name = name;
+            this.price = price;
+            this.quantity = quantity;
+        }
+    }
+
+    product1 = new Product('SP001', 'BMW i3', 100000, 2);
+    Products.push(product1);
+    product2 = new Product('SP002', 'Mercedes c200', 200000, 3);
+    Products.push(product2);
+    product3 = new Product('SP002', 'Honda CRV', 200000, 3);
+    Products.push(product3);
+
+    const result = document.getElementById("result");
+    let table = '<table><tr><th>Mã sản phẩm</th><th>Tên sản phẩm</th><th>Giá tiền</th><th>Số lượng</th></tr>';
+    for (let i = 0; i < Products.length; i++) {
+        table += `<tr>
+            <td>${Products[i].code}</td>
+            <td>${Products[i].name}</td>
+            <td>${Products[i].price}</td>
+            <td>${Products[i].quantity}</td>
+        </tr>`;
+    }
+    table += '</table>';
+    result.innerHTML = table;
+    console.log(Products);
+
+</script>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Lái Xe</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+<script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let car = {
+        x: canvas.width / 2,
+        y: canvas.height / 2,
+        width: 50,
+        height: 100,
+        speed: 2,
+        direction: 0 // 0: up, 1: right, 2: down, 3: left
+    };
+
+    let obstacles = [{ x: 100, y: 100, width: 50, height: 50 }];
+    let rewards = [{ x: 300, y: 300, width: 20, height: 20 }];
+    let score = 0;
+    let gameOver = false;
+
+    function drawCar() {
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(car.x, car.y, car.width, car.height);
+    }
+
+    function drawObstacles() {
+        ctx.fillStyle = 'red';
+        obstacles.forEach(obstacle => {
+            ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+        });
+    }
+
+    function drawRewards() {
+        ctx.fillStyle = 'gold';
+        rewards.forEach(reward => {
+            ctx.fillRect(reward.x, reward.y, reward.width, reward.height);
+        });
+    }
+
+    function update() {
+        if (gameOver) return;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawCar();
+        drawObstacles();
+        drawRewards();
+
+        // Check for collisions
+        obstacles.forEach(obstacle => {
+            if (car.x < obstacle.x + obstacle.width &&
+                car.x + car.width > obstacle.x &&
+                car.y < obstacle.y + obstacle.height &&
+                car.y + car.height > obstacle.y) {
+                gameOver = true;
+                alert('Game Over!');
+            }
+        });
+
+        rewards.forEach((reward, index) => {
+            if (car.x < reward.x + reward.width &&
+                car.x + car.width > reward.x &&
+                car.y < reward.y + reward.height &&
+                car.y + car.height > reward.y) {
+                score++;
+                rewards.splice(index, 1); // Remove the reward
+            }
+        });
+
+        requestAnimationFrame(update);
+    }
+
+    function moveCar(event) {
+        if (event.key === 'Control') {
+            car.speed = 4; // Increase speed
+        }
+        if (event.key === 'ArrowUp') {
+            car.y -= car.speed;
+        }
+        if (event.key === 'ArrowDown') {
+            car.y += car.speed;
+        }
+        if (event.key === 'ArrowLeft') {
+            car.x -= car.speed;
+        }
+        if (event.key === 'ArrowRight') {
+            car.x += car.speed;
+        }
+    }
+
+    function stopCar(event) {
+        if (event.key === 'Control') {
+            car.speed = 2; // Reset speed
+        }
+    }
+
+    document.addEventListener('keydown', moveCar);
+    document.addEventListener('keyup', stopCar);
+
+    update(); // Start the game loop
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class Mobile {
+        battery;
+        draftMessage;
+        inboxMessagesStorage;
+        sentMessages
+        isOn;
+
+        constructor(battery, isOn = false) {
+            this.battery = battery;
+            this.isOn = isOn;
+            this.draftMessage = "";
+            this.inboxMessagesStorage = [];
+            this.sentMessages = [];
+        }
+
+        checkStatus() {
+            return this.isOn;
+        }
+
+        turnOnPhone() {
+            if (this.battery > 0) {
+                this.isOn = true;
+                this.battery--;
+            } else {
+                alert("Battery is empty. Please charge the phone!");
+            }
+        }
+
+        turnOffPhone() {
+            this.isOn = false;
+        }
+
+        chargeBattery() {
+            if (this.battery < 100) {
+                this.battery++;
+            }
+        }
+
+        composeMessages() {
+            if (this.isOn && this.battery > 0) {
+                this.battery--;
+                this.draftMessage = prompt("Nhập tin nhắn muốn gửi");
+            } else {
+                alert("Cannot compose message. The phone is off or battery is empty.");
+            }
+        }
+
+        receiveMessage(message) {
+            if (this.isOn && this.battery > 0) {
+                this.battery--;
+                this.inboxMessagesStorage.push(message);
+            } else {
+                alert("Cannot receive  messages. The phone is off or battery is empty.");
+            }
+        }
+
+        sendMessages(receiver) {
+            if (this.isOn && this.battery > 0) {
+                this.battery--;
+                receiver.receiveMessage(this.draftMessage);
+                this.sentMessages.push(this.draftMessage);
+                this.draftMessage = "";
+            } else {
+                alert("Cannot send messages. The phone is off or battery is empty.");
+            }
+        }
+
+        viewMessagesInInbox() {
+            if (this.isOn && this.battery > 0) {
+                this.battery--;
+                alert("Inbox: \n" + this.inboxMessagesStorage.join("\n"));
+            } else {
+                alert("Cannot view inbox. The phone is off or battery is empty.");
+            }
+        }
+
+        viewSentMessages() {
+            if (this.isOn && this.battery > 0) {
+                this.battery--;
+                alert("Semt: \n" + this.sentMessages.join("\n"));
+            } else {
+                alert("Cannot view sent messages. The phone is off or battery is empty.");
+            }
+            this.battery--;
+            alert(this.sentMessages);
+        }
+    }
+
+    let nokia = new Mobile(100);
+    let iphone = new Mobile(100);
+    nokia.turnOnPhone();
+    iphone.turnOnPhone();
+    nokia.composeMessages();
+    nokia.sendMessages(iphone);
+    iphone.viewMessagesInInbox();
+</script>
