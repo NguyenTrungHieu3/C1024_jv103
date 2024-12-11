@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển chương trình thể hiện sự tương tác giữa công tắc và bóng đèn </title>
+</head>
+<body>
+
+</body>
+<script>
+    class SwitchButton {
+        status;
+        lamp;
+
+        constructor(status, lamp) {
+            this.status = status;
+            this.lamp = lamp;
+        }
+
+        connectToLamp(electricLamp) {
+            this.lamp = electricLamp;
+        }
+
+        switchOff() {
+            this.lamp.turnOff();
+        }
+
+        switchOn() {
+            this.lamp.turnOn();
+        }
+    }
+
+    class ElectricLamp {
+        status;
+        constructor(status) {
+            this.status = status;
+        }
+
+        turnOn() {
+            if (this.status){
+                console.log("Lamp is turned on");
+            } else {
+                console.log("Lamp is turning on ...");
+                console.log("...");
+                console.log("...");
+                console.log("...");
+                console.log("Lamp is turned on");
+                this.status = true;
+            }
+        }
+
+        turnOff() {
+            if (!this.status){
+                console.log("Lamp is turned off");
+            } else {
+                console.log("Lamp is turning off ...");
+                console.log("...");
+                console.log("...");
+                console.log("...");
+                console.log("Lamp is turned Off");
+                this.status = false;
+            }
+        }
+    }
+
+    const electricLamp = new ElectricLamp(false);
+    const switchButton = new SwitchButton(false, electricLamp);
+    switchButton.connectToLamp(electricLamp);
+    switchButton.switchOn();
+    switchButton.switchOff();
+    switchButton.switchOff();
+</script>
+</html>

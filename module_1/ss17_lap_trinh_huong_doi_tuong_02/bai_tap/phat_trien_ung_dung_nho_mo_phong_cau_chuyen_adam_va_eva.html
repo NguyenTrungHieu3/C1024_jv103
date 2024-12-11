@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Apple {
+        weight;
+
+        constructor() {
+            this.weight = 10;
+        }
+
+        decrease() {
+            this.weight--;
+        }
+
+        isEmpty() {
+            return this.weight === 0;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+    }
+
+    class Human {
+        name;
+        gender;
+        weight;
+
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        isMale() {
+            return this.gender === 'male';
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        checkApple(apple) {
+            return apple.getWeight();
+        }
+
+        eat(apple) {
+            if (!apple.isEmpty()) {
+                console.log(`${this.name} is eating apple ...`);
+                apple.decrease();
+                this.weight++;
+                console.log(`${adam.getName()} Weight: `+adam.getWeight());
+            } else {
+                console.log("Apple is empty.");
+            }
+        }
+
+        say(message) {
+            console.log(message);
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+    }
+
+    const apple = new Apple();
+    console.log("Apple Weight: "+apple.getWeight());
+
+    const adam = new Human("Adam", 'male', 70);
+    if(adam.isMale()) {
+        console.log(`${adam.getName()} is male`);
+    } else {
+        console.log(`${adam.getName()} is female`);
+    }
+    console.log("Apple Weight: "+adam.checkApple(apple));
+    adam.eat(apple);
+    adam.say("Hello Eva");
+    console.log(`${adam.getName()} Weight: `+adam.getWeight());
+    console.log("Apple Weight "+adam.checkApple(apple));
+
+    console.log("----------------------------");
+    const eva = new Human("Eva", 'female', 60);
+    console.log("Apple Weight: "+apple.getWeight());
+    if(eva.isMale()) {
+        console.log(`${eva.getName()} is male`);
+    } else {
+        console.log(`${eva.getName()} is female`);
+    }
+    console.log("Apple Weight: "+eva.checkApple(apple));
+    eva.eat(apple);
+    eva.say("Hello Adam");
+    console.log(`${eva.getName()} Weight: `+eva.getWeight());
+    console.log("Apple Weight "+eva.checkApple(apple));
+</script>
+</html>

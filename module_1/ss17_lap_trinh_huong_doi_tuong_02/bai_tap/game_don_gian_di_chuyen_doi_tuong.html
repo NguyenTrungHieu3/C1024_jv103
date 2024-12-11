@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Game di chuyển đối tượng</title>
+  <meta charset="UTF-8">
+  <title>Game di chuyển đôi tượng</title>
 </head>
 <body>
 <div id="game"></div>
 <script>
-    function Hero(image, top, left, size){
-        this.image = image;
-        this.top = top;
-        this.left = left;
-        this.size = size;
+  function Hero(image, top, left, size, speed){
+    this.image = image;
+    this.top = top;
+    this.left = left;
+    this.size = size;
+    this.speed = speed;
 
-        this.getHeroElement = function(){
-            return '<img width="'+ this.size + '"' +
-                ' height="'+ this.size + '"' +
-                ' src="' + this.image +'"' +
-                ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
-        }
-
-        this.moveRight = function(){
-            this.left += 20;
-            console.log('ok: ' + this.left);
-        }
-
+    this.getHeroElement = function(){
+      return '<img width="'+ this.size + '"' +
+              ' height="'+ this.size + '"' +
+              ' src="' + this.image +'"' +
+              ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
     }
 
-    var hero = new Hero('pikachu.png', 20, 30, 200);
-
-    function start(){
-        if(hero.left < window.innerWidth - hero.size){
-            hero.moveRight();
-        }
-        document.getElementById('game').innerHTML = hero.getHeroElement();
-        setTimeout(start, 500)
+    this.moveRight = function(){
+      this.left += this.speed;
+      console.log('ok: ' + this.left);
     }
 
-    start();
+    this.moveLeft = function(){
+      this.left -= this.speed;
+      console.log('ok: ' + this.left);
+    }
+
+    this.moveUp = function(){
+      this.top -= this.speed;
+      console.log('ok: ' + this.left);
+    }
+
+    this.moveDown = function(){
+      this.top += this.speed;
+      console.log('ok: ' + this.left);
+    }
+  }
+
+  let hero = new Hero('./images/doraemon.png', 20, 30, 200,100);
+
+  function start(){
+    if(hero.left < window.innerWidth - hero.size){
+      hero.moveRight();
+    } else if (hero.left >= window.innerWidth - hero.size){
+      hero.moveDown()
+    } else if (hero.left >= window.innerHeight - hero.size){
+      hero.moveLeft()
+    }else (hero.left >= window.innerWidth - hero.size){
+      hero.moveDown()
+    }
+    document.getElementById('game').innerHTML = hero.getHeroElement();
+    setTimeout(start, 500)
+  }
+
+  start();
 </script>
 </body>
 </html>
