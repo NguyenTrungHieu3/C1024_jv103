@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc594ffa-b9f1-4d8f-b893-d0edd98334e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/bai_tap/ung_dung_doc_so_thanh_chu/out/production/ung_dung_doc_so_thanh_chu/ConvertNumberToWord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/demo_java/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/demo_java/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/demo_java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/demo_java/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/demo_java/demo_java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/system_time/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/system_time/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/system_time/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/system_time/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/system_time/SystemTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/system_time/system_time.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss1_introduction_to_java/thuc_hanh/thuc_hanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/bai_tap/hien_thi_20_so_nguyen_to_dau_tien/HienThiNSoNguyenToDauTien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/bai_tap/hien_thi_20_so_nguyen_to_dau_tien/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/bai_tap/hien_thi_cac_loai_hinh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/bai_tap/hien_thi_cac_loai_hinh/HienThiCacLoaiHinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/bai_tap/hien_thi_cac_so_nguyen_to_nho_hon_100/HienThiCacSoNguyenToNhoHon100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/bai_tap/hien_thi_cac_so_nguyen_to_nho_hon_100/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/check_prime2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/check_prime2/Prime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/draw_geometry/Geometry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/draw_geometry/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/greatest_common_factor/GreatestCommonFactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/greatest_common_factor/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/interest_calculator/Interest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_vong_lap_trong_java/thuc_hanh/interest_calculator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/count_total_numbers_in_the _column/CountTotalNumbersInTheColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/count_total_numbers_in_the _column/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/dem_so_lan_xuat_hien_cua_ky_tu_trong_chuoi/DemSoLanXuatHienCuaKiTu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/dem_so_lan_xuat_hien_cua_ky_tu_trong_chuoi/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/find_max_element_in_2D_array/FindMaxElementIn2DArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/find_max_element_in_2D_array/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/find_min_element_in_2D_array/FindMinElementIn2DArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/find_min_element_in_2D_array/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/gop_mang/GopMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/gop_mang/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/them_phan_tu_vao_mang/AddElementToArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/them_phan_tu_vao_mang/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/tinh_tong_cac_phan_tu_tren_duong_cheo_chinh/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/tinh_tong_cac_phan_tu_tren_duong_cheo_chinh/TotalNumbersInMainDiagonal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/xoa_phan_tu_khoi_mang/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/bai_tap/xoa_phan_tu_khoi_mang/XoaPhanTuKhoiMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/convert_temperature/ConvertTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/convert_temperature/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/count_student_pass/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/count_student_pass/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/find_max_element/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/find_max_element/NumberArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/find_min_element/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/find_min_element/NumberArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/reverse_array/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/reverse_array/ReserveArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/student_array/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/student_array/StudentArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_lop_va_doi_tuong_trong_java/thuc_hanh/create_retangle_class/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss4_lop_va_doi_tuong_trong_java/thuc_hanh/create_retangle_class/Rectangle.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2rKEMdEo7FJY64YNRo51CfWOVlM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Hello.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Code_Gym_Workspace/C1024_jv103/module_2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code_Gym_Workspace\C1024_jv103\module_2\ss3_mang_va_phuong_thuc_trong_java\thuc_hanh" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc594ffa-b9f1-4d8f-b893-d0edd98334e8" name="Changes" comment="" />
+      <created>1736299319581</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736299319581</updated>
+      <workItem from="1736299320813" duration="149000" />
+      <workItem from="1736299604209" duration="4000" />
+      <workItem from="1736299680353" duration="172000" />
+      <workItem from="1736431817047" duration="331000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
